@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <title>Rock Paper Scissors - Week 8</title>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+<head>  
+    <title>Random Array Guess Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <p>Choose wisely</p>
-  <div class="buttons">
-    <button onclick="newgame()">Click here to play</button>
-  </div>
-  <h1 id="computer-choice"></h3>
-  <h1 id="result"></h2>  
+
+    <h1>Array Game</h1>
+
+    <div class="game-box">
+        <p>Click the button to generate a random array of 5 numbers (1–10).</p>
+
+        <button onclick="generateArray()">Generate Array</button>
+
+        <hr>
+
+        <label for="guess">Enter your guess (1–10):</label>
+        <input type="number" id="guess" min="1" max="10">
+
+        <button onclick="checkGuess()">Check</button>
+
+        <p id="result"></p>
+
+        
+        <p id="arrayOutput" style="display:none;"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
